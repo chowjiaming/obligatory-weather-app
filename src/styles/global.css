@@ -80,14 +80,4 @@ body {
 body * {
   box-sizing: border-box;
 }
-.App {
-  display: flex;
-  justify-content: center;
-  padding: 0 40px;
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
-  .App {
-    padding: 0 20px;
-  }
-}
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=global.css.map */
