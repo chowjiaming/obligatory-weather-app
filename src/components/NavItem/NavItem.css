@@ -1,0 +1,43 @@
+.tab-item-wrapper {
+  flex: 1;
+  text-align: center;
+}
+@media only screen and (max-width: 575px) {
+  .tab-item-wrapper {
+    margin-right: 30px;
+  }
+}
+.tab-item-wrapper:first-child {
+  text-align: end;
+}
+.tab-item-wrapper:last-child {
+  text-align: start;
+}
+.tab-item-wrapper .tab-item {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tab-item-wrapper .tab-item {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tab-item-wrapper .tab-item {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .tab-item-wrapper .tab-item {
+    font-size: 26px;
+  }
+}
+.tab-item-wrapper .tab-item.active {
+  font-weight: 700;
+  color: #5fb0e8;
+}
+/*# sourceMappingURL=NavItem.css.map */

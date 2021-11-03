@@ -1,0 +1,17 @@
+@import "../../styles/media";
+
+.tab-bar-container {
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  @media @sm {
+    height: 150px;
+  }
+  @media @xs {
+    height: 120px;
+    justify-content: start;
+  }
+}
