@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Main.css";
 import Navbar from "../Navbar/Navbar.js";
+import Forecast from "../Forecast/Forecast.js";
 
 class Main extends Component {
   state = {
@@ -20,6 +21,7 @@ class Main extends Component {
           activeTab={this.state.activeTab}
           setActiveTab={this.setActiveTab}
         />
+        <Forecast activeTab={this.state.activeTab} />
       </div>
     );
   }

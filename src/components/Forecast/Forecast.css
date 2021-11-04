@@ -1,0 +1,55 @@
+.forecast-container {
+  background: #fff;
+  border: 8px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0px 13px 40px -5px rgba(0, 0, 0, 0.2);
+}
+.forecast-container .today-block {
+  margin-bottom: 8px;
+}
+.forecast-container .today-block .forecast-item-container {
+  border-radius: 11px 11px 0 0;
+}
+.forecast-container .further-days-block {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+  .forecast-container .further-days-block {
+    flex-direction: column;
+  }
+}
+.forecast-container .further-days-block .forecast-item-container {
+  width: 25%;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+  .forecast-container .further-days-block .forecast-item-container {
+    width: 100%;
+  }
+}
+.forecast-container .further-days-block .forecast-item-container:not(:last-child) {
+  margin-right: 8px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+  .forecast-container .further-days-block .forecast-item-container:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+.forecast-container .further-days-block .forecast-item-container:first-child {
+  border-radius: 0 0 0 11px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+  .forecast-container .further-days-block .forecast-item-container:first-child {
+    border-radius: 0;
+  }
+}
+.forecast-container .further-days-block .forecast-item-container:last-child {
+  border-radius: 0 0 11px 0;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+  .forecast-container .further-days-block .forecast-item-container:last-child {
+    border-radius: 0 0 11px 11px;
+  }
+}
+/*# sourceMappingURL=Forecast.css.map */

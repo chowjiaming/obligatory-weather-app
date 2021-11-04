@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/media";
+
+.forecast-container {
+  background: #fff;
+  border: @widget-blocks-gap solid #fff;
+  border-radius: 20px;
+  box-shadow: 0px 13px 40px -5px rgba(0, 0, 0, 0.2);
+
+  // Today Block
+  .today-block {
+    margin-bottom: @widget-blocks-gap;
+    .forecast-item-container {
+      border-radius: @widget-blocks-radius @widget-blocks-radius 0 0;
+    }
+  }
+
+  // Further Days Block
+  .further-days-block {
+    display: flex;
+    justify-content: space-between;
+    @media @sm, @xs {
+      flex-direction: column;
+    }
+    .forecast-item-container {
+      width: 25%;
+      @media @sm, @xs {
+        width: 100%;
+      }
+      &:not(:last-child) {
+        margin-right: @widget-blocks-gap;
+        @media @sm, @xs {
+          margin-right: 0;
+          margin-bottom: @widget-blocks-gap;
+        }
+      }
+      &:first-child {
+        border-radius: 0 0 0 @widget-blocks-radius;
+        @media @sm, @xs {
+          border-radius: 0;
+        }
+      }
+      &:last-child {
+        border-radius: 0 0 @widget-blocks-radius 0;
+        @media @sm, @xs {
+          border-radius: 0 0 @widget-blocks-radius @widget-blocks-radius;
+        }
+      }
+    }
+  }
+}
